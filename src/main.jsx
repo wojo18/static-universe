@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import "./index.css";
 
 function Consciousness() {
   const thoughts = [
@@ -21,4 +22,8 @@ function Consciousness() {
   );
 }
 
-ReactDOM.createRoot(document.getElementById("root")).render(<Consciousness />);
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <Consciousness />
+  </React.StrictMode>
+);
